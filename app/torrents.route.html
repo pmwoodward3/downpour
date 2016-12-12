@@ -43,8 +43,34 @@
   </li>
 </context-menu>
 
+<div class='loading' *ngIf='loading'>
+  <div class='rain'>
+    <div class='drop'></div>
+    <div class='drop'></div>
+    <div class='drop'></div>
+    <div class='drop'></div>
+    <div class='drop'></div>
+    <div class='drop'></div>
+
+    <div class='drop'></div>
+    <div class='drop'></div>
+    <div class='drop'></div>
+    <div class='drop'></div>
+    <div class='drop'></div>
+    <div class='drop'></div>
+
+    <div class='drop'></div>
+    <div class='drop'></div>
+    <div class='drop'></div>
+    <div class='drop'></div>
+    <div class='drop'></div>
+    <div class='drop'></div>
+  </div>
+  <h1>Loading...</h1>
+</div>
+
 <!-- TODO: Possibly switch to https://github.com/swimlane/angular2-data-table/ -->
-<div class='flex-table' style='margin-bottom:5em'>
+<div class='flex-table' style='margin-bottom:5em' *ngIf='!loading'>
   <div class='flex-table-row'>
     <div
       class='flex-table-item flex-table-fit center'
